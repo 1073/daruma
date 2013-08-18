@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Monitoring</title>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/websocket.js"></script>
+<style>
+    .node{
+        padding:5px;
+        border-radius:5px;
+        background:#abc;
+        border:2px solid #678;
+    }
+</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Monitoring Nodes</h1>
+        <input id="server" type="text" value="ws://localhost:8080/websocket"
+            readonly style="width: 300px;" />
+        <div id="status"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(WebSocketHandler.init());
+</script>
+</html>

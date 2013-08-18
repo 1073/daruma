@@ -1,0 +1,14 @@
+{application, daruma,
+ [
+  {description, "Program monitor application"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { daruma_app, []}},
+  {env, [
+         {welcome_page, "index.html"}
+    ]}
+ ]}.
